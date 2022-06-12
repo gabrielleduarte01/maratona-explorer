@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    box-sizing: border-box; /*alinhou o tamanho do botao com o input*/
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+
+#container {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 400px;
+    margin-inline: auto; /* pra deixar no meio da tela margin right e left*/
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    opacity: 0.9; 
+}
+
+p {
+    margin-bottom: 40px;
+    opacity: 0.7;
+}
+
+input, button {
+    display: block; /* um elemento ficou em cima e o outro embaixo separou o imput do button*/
+    width: 100%; /* 100% da largura do container */
+    padding: 20px;    
+    font-size: 20px;
+    border-radius: 4px;
+    
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button {
+    border: none; /*para tirar a borda em volta*/
+    background-color: rgb(105, 38, 168);
+    color: white;
+    transition: filter .2s; 
+   
+}
+
+button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#res {
+    margin-top: 30px;
+    transition: opacity 1s; /* para quandoa resposta em js for sumir, sumir suavemente */
+
+}
+
+#res div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
